@@ -291,7 +291,7 @@ let type_tests = [
   ),
   t(
     "type_alias_3",
-    "type Foo<a> = (String, List<a>); ('foo', [1, 2, 3]) : Foo<Number>",
+    "type Foo<a> = (String, List<a>); (\"foo\", [1, 2, 3]) : Foo<Number>",
     "(\"foo\", [1, 2, 3])",
   ),
   // Fully abstract types
