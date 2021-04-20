@@ -23,5 +23,5 @@
  (modes exe js)
  (libraries grain grain_diagnostics binaryen.js dune-build-info)
  (js_of_ocaml
-  (flags --no-sourcemap --no-extern-fs --quiet)
+  (flags --no-sourcemap --no-extern-fs --quiet --debug-info)
   (javascript_files runtime.js jsoo_hacks.js)))

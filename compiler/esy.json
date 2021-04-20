@@ -14,7 +14,7 @@
     }
   },
   "scripts": {
-    "copy-compiler": "cp #{$GRAINC_BIN_PATH} #{$GRAINC_JS_PATH} #{$CLI_BIN_DIR}",
+    "copy-compiler": "cp #{$GRAINC_JS_PATH} #{$CLI_BIN_DIR}",
     "clean": "rm -rf #{self.root}/_esy",
     "test": "dune runtest --force",
     "format": "dune build @fmt --auto-promote",
@@ -45,8 +45,7 @@
     "@opam/ounit": ">= 2.0.0"
   },
   "resolutions": {
-    "@grain/binaryen.ml": "grain-lang/binaryen.ml#8a21a8a6ce6abad71f36e5f13492a7c7a625cb00",
-    "@opam/ocamlfind": "1.8.1",
+    "@grain/binaryen.ml": "link:../../binaryen.ml",
     "@opam/fp": "facebookexperimental/reason-native:fp.opam#a33f1528a6dd86c67f365e226c81312733181c87",
     "@opam/fs": "facebookexperimental/reason-native:fs.opam#a33f1528a6dd86c67f365e226c81312733181c87",
     "@opam/utf8": "facebookexperimental/reason-native:utf8.opam#a33f1528a6dd86c67f365e226c81312733181c87"
